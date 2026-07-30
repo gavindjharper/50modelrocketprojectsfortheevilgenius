@@ -1,0 +1,324 @@
+' =========================================================================
+'
+'   File...... JTablePos.BPE
+'   Purpose... J-type (Iron/Constantan) thermocouple data (0C reference)
+'   Author.... Compiled by Parallax
+'   E-mail.... support@parallax.com
+'   Started...
+'   Updated... 19 JAN 2004
+'
+'   {$STAMP BS2pe}
+'   {$PBASIC 2.5}
+'
+' =========================================================================
+
+' tC                 +0          +1          +2          +3          +4
+'                    +5          +6          +7          +8          +9
+
+J0000   DATA    Word 00000, Word 00050, Word 00101, Word 00151, Word 00202,
+                Word 00253, Word 00303, Word 00354, Word 00405, Word 00456
+
+J0010   DATA    Word 00507, Word 00558, Word 00609, Word 00660, Word 00711,
+                Word 00762, Word 00814, Word 00865, Word 00916, Word 00968
+
+J0020   DATA    Word 01019, Word 01070, Word 01122, Word 01174, Word 01226,
+                Word 01277, Word 01328, Word 01381, Word 01433, Word 01485
+
+J0030   DATA    Word 01536, Word 01588, Word 01641, Word 01693, Word 01745,
+                Word 01796, Word 01848, Word 01902, Word 01954, Word 02006
+
+J0040   DATA    Word 02059, Word 02111, Word 02164, Word 02216, Word 02269,
+                Word 02322, Word 02374, Word 02427, Word 02480, Word 02532
+
+J0050   DATA    Word 02584, Word 02637, Word 02690, Word 02744, Word 02797,
+                Word 02850, Word 02903, Word 02956, Word 03008, Word 03062
+
+J0060   DATA    Word 03116, Word 03169, Word 03222, Word 03274, Word 03329,
+                Word 03382, Word 03435, Word 03488, Word 03543, Word 03596
+
+J0070   DATA    Word 03649, Word 03703, Word 03757, Word 03810, Word 03863,
+                Word 03918, Word 03971, Word 04025, Word 04078, Word 04133
+
+J0080   DATA    Word 04187, Word 04240, Word 04294, Word 04347, Word 04402,
+                Word 04456, Word 04509, Word 04564, Word 04618, Word 04671
+
+J0090   DATA    Word 04726, Word 04780, Word 04835, Word 04889, Word 04943,
+                Word 04996, Word 05052, Word 05105, Word 05160, Word 05214
+
+J0100   DATA    Word 05269, Word 05323, Word 05378, Word 05432, Word 05487,
+                Word 05541, Word 05594, Word 05650, Word 05705, Word 05759
+
+J0110   DATA    Word 05814, Word 05868, Word 05923, Word 05977, Word 06032,
+                Word 06086, Word 06141, Word 06195, Word 06251, Word 06306
+
+J0120   DATA    Word 06360, Word 06415, Word 06469, Word 06525, Word 06578,
+                Word 06634, Word 06689, Word 06743, Word 06799, Word 06854
+
+J0130   DATA    Word 06908, Word 06964, Word 07019, Word 07073, Word 07129,
+                Word 07184, Word 07238, Word 07294, Word 07349, Word 07403
+
+J0140   DATA    Word 07459, Word 07514, Word 07569, Word 07624, Word 07679,
+                Word 07734, Word 07789, Word 07844, Word 07900, Word 07955
+
+J0150   DATA    Word 08009, Word 08064, Word 08120, Word 08175, Word 08230,
+                Word 08285, Word 08340, Word 08396, Word 08451, Word 08506
+
+J0160   DATA    Word 08561, Word 08618, Word 08673, Word 08727, Word 08782,
+                Word 08839, Word 08894, Word 08948, Word 09005, Word 09060
+
+J0170   DATA    Word 09115, Word 09170, Word 09226, Word 09282, Word 09336,
+                Word 09391, Word 09448, Word 09503, Word 09559, Word 09614
+
+J0180   DATA    Word 09669, Word 09724, Word 09779, Word 09836, Word 09891,
+                Word 09947, Word 10002, Word 10057, Word 10112, Word 10168
+
+J0190   DATA    Word 10224, Word 10278, Word 10335, Word 10390, Word 10445,
+                Word 10500, Word 10557, Word 10612, Word 10668, Word 10723
+
+J0200   DATA    Word 10778, Word 10833, Word 10890, Word 10945, Word 11000,
+                Word 11056, Word 11112, Word 11166, Word 11223, Word 11278
+
+J0210   DATA    Word 11333, Word 11389, Word 11445, Word 11500, Word 11556,
+                Word 11612, Word 11666, Word 11723, Word 11778, Word 11833
+
+J0220   DATA    Word 11889, Word 11945, Word 12000, Word 12056, Word 12111,
+                Word 12166, Word 12221, Word 12278, Word 12333, Word 12389
+
+J0230   DATA    Word 12445, Word 12500, Word 12556, Word 12611, Word 12666,
+                Word 12721, Word 12778, Word 12833, Word 12889, Word 12944
+
+J0240   DATA    Word 13000, Word 13056, Word 13111, Word 13166, Word 13221,
+                Word 13278, Word 13333, Word 13389, Word 13444, Word 13500
+
+J0250   DATA    Word 13554, Word 13611, Word 13666, Word 13721, Word 13777,
+                Word 13833, Word 13887, Word 13944, Word 13999, Word 14054
+
+J0260   DATA    Word 14109, Word 14166, Word 14221, Word 14277, Word 14332,
+                Word 14387, Word 14442, Word 14499, Word 14554, Word 14608
+
+J0270   DATA    Word 14665, Word 14720, Word 14775, Word 14830, Word 14887,
+                Word 14942, Word 14998, Word 15053, Word 15108, Word 15163
+
+J0280   DATA    Word 15219, Word 15275, Word 15330, Word 15386, Word 15441,
+                Word 15496, Word 15551, Word 15607, Word 15663, Word 15718
+
+J0290   DATA    Word 15772, Word 15829, Word 15884, Word 15939, Word 15995,
+                Word 16050, Word 16106, Word 16161, Word 16216, Word 16272
+
+J0300   DATA    Word 16327, Word 16382, Word 16437, Word 16493, Word 16548,
+                Word 16603, Word 16658, Word 16714, Word 16769, Word 16824
+
+J0310   DATA    Word 16881, Word 16935, Word 16990, Word 17045, Word 17102,
+                Word 17157, Word 17211, Word 17268, Word 17323, Word 17378
+
+J0320   DATA    Word 17434, Word 17489, Word 17544, Word 17599, Word 17655,
+                Word 17710, Word 17765, Word 17820, Word 17876, Word 17931
+
+J0330   DATA    Word 17986, Word 18041, Word 18097, Word 18152, Word 18207,
+                Word 18262, Word 18318, Word 18373, Word 18428, Word 18483
+
+J0340   DATA    Word 18538, Word 18594, Word 18649, Word 18704, Word 18759,
+                Word 18814, Word 18870, Word 18925, Word 18980, Word 19035
+
+J0350   DATA    Word 19089, Word 19146, Word 19201, Word 19256, Word 19310,
+                Word 19365, Word 19422, Word 19477, Word 19532, Word 19586
+
+J0360   DATA    Word 19641, Word 19696, Word 19753, Word 19807, Word 19862,
+                Word 19917, Word 19972, Word 20027, Word 20083, Word 20138
+
+J0370   DATA    Word 20193, Word 20248, Word 20304, Word 20359, Word 20414,
+                Word 20469, Word 20525, Word 20580, Word 20635, Word 20690
+
+J0380   DATA    Word 20745, Word 20800, Word 20855, Word 20911, Word 20966,
+                Word 21021, Word 21076, Word 21131, Word 21186, Word 21240
+
+J0390   DATA    Word 21297, Word 21352, Word 21407, Word 21461, Word 21516,
+                Word 21571, Word 21626, Word 21682, Word 21737, Word 21792
+
+J0400   DATA    Word 21847, Word 21902, Word 21958, Word 22013, Word 22068,
+                Word 22123, Word 22179, Word 22234, Word 22289, Word 22344
+
+J0410   DATA    Word 22400, Word 22455, Word 22510, Word 22565, Word 22620,
+                Word 22676, Word 22731, Word 22786, Word 22841, Word 22896
+
+J0420   DATA    Word 22952, Word 23007, Word 23062, Word 23117, Word 23172,
+                Word 23228, Word 23283, Word 23338, Word 23393, Word 23449
+
+J0430   DATA    Word 23504, Word 23559, Word 23614, Word 23670, Word 23725,
+                Word 23780, Word 23835, Word 23891, Word 23946, Word 24001
+
+J0440   DATA    Word 24057, Word 24112, Word 24167, Word 24222, Word 24278,
+                Word 24333, Word 24388, Word 24443, Word 24498, Word 24554
+
+J0450   DATA    Word 24609, Word 24664, Word 24721, Word 24775, Word 24832,
+                Word 24887, Word 24943, Word 24998, Word 25053, Word 25109
+
+J0460   DATA    Word 25164, Word 25219, Word 25275, Word 25330, Word 25385,
+                Word 25442, Word 25496, Word 25553, Word 25608, Word 25664
+
+J0470   DATA    Word 25719, Word 25775, Word 25830, Word 25885, Word 25942,
+                Word 25998, Word 26053, Word 26109, Word 26164, Word 26219
+
+J0480   DATA    Word 26275, Word 26332, Word 26387, Word 26443, Word 26498,
+                Word 26554, Word 26609, Word 26666, Word 26722, Word 26778
+
+J0490   DATA    Word 26833, Word 26888, Word 26945, Word 27001, Word 27057,
+                Word 27112, Word 27169, Word 27225, Word 27280, Word 27336
+
+J0500   DATA    Word 27393, Word 27449, Word 27504, Word 27561, Word 27617,
+                Word 27673, Word 27728, Word 27785, Word 27841, Word 27897
+
+J0510   DATA    Word 27952, Word 28010, Word 28065, Word 28121, Word 28178,
+                Word 28234, Word 28291, Word 28347, Word 28403, Word 28460
+
+J0520   DATA    Word 28516, Word 28571, Word 28629, Word 28685, Word 28740,
+                Word 28798, Word 28853, Word 28911, Word 28967, Word 29024
+
+J0530   DATA    Word 29080, Word 29137, Word 29193, Word 29250, Word 29307,
+                Word 29362, Word 29420, Word 29477, Word 29533, Word 29589
+
+J0540   DATA    Word 29647, Word 29704, Word 29760, Word 29818, Word 29874,
+                Word 29931, Word 29987, Word 30045, Word 30102, Word 30158
+
+J0550   DATA    Word 30216, Word 30272, Word 30330, Word 30387, Word 30443,
+                Word 30501, Word 30559, Word 30615, Word 30673, Word 30730
+
+J0560   DATA    Word 30788, Word 30845, Word 30902, Word 30960, Word 31016,
+                Word 31074, Word 31132, Word 31189, Word 31246, Word 31304
+
+J0570   DATA    Word 31362, Word 31419, Word 31477, Word 31535, Word 31592,
+                Word 31650, Word 31708, Word 31766, Word 31823, Word 31881
+
+J0580   DATA    Word 31939, Word 31996, Word 32054, Word 32112, Word 32170,
+                Word 32228, Word 32286, Word 32344, Word 32402, Word 32460
+
+J0590   DATA    Word 32518, Word 32576, Word 32636, Word 32694, Word 32752,
+                Word 32810, Word 32868, Word 32926, Word 32984, Word 33044
+
+J0600   DATA    Word 33102, Word 33161, Word 33219, Word 33277, Word 33337,
+                Word 33395, Word 33454, Word 33512, Word 33570, Word 33630
+
+J0610   DATA    Word 33689, Word 33747, Word 33807, Word 33865, Word 33924,
+                Word 33984, Word 34042, Word 34102, Word 34161, Word 34219
+
+J0620   DATA    Word 34279, Word 34338, Word 34396, Word 34457, Word 34515,
+                Word 34575, Word 34634, Word 34694, Word 34753, Word 34813
+
+J0630   DATA    Word 34872, Word 34932, Word 34991, Word 35051, Word 35111,
+                Word 35170, Word 35230, Word 35289, Word 35350, Word 35410
+
+J0640   DATA    Word 35469, Word 35530, Word 35590, Word 35649, Word 35710,
+                Word 35770, Word 35829, Word 35890, Word 35950, Word 36009
+
+J0650   DATA    Word 36070, Word 36131, Word 36191, Word 36252, Word 36311,
+                Word 36372, Word 36432, Word 36493, Word 36554, Word 36615
+
+J0660   DATA    Word 36675, Word 36736, Word 36797, Word 36858, Word 36917,
+                Word 36978, Word 37039, Word 37100, Word 37161, Word 37222
+
+J0670   DATA    Word 37283, Word 37344, Word 37405, Word 37466, Word 37527,
+                Word 37590, Word 37651, Word 37712, Word 37773, Word 37835
+
+J0680   DATA    Word 37896, Word 37957, Word 38018, Word 38081, Word 38142,
+                Word 38204, Word 38265, Word 38326, Word 38389, Word 38450
+
+J0690   DATA    Word 38512, Word 38573, Word 38636, Word 38698, Word 38759,
+                Word 38822, Word 38884, Word 38945, Word 39008, Word 39070
+
+J0700   DATA    Word 39132, Word 39194, Word 39256, Word 39317, Word 39381,
+                Word 39442, Word 39505, Word 39567, Word 39630, Word 39692
+
+J0710   DATA    Word 39755, Word 39817, Word 39880, Word 39942, Word 40005,
+                Word 40067, Word 40131, Word 40192, Word 40256, Word 40319
+
+J0720   DATA    Word 40381, Word 40445, Word 40508, Word 40570, Word 40633,
+                Word 40695, Word 40759, Word 40822, Word 40886, Word 40948
+
+J0730   DATA    Word 41012, Word 41075, Word 41137, Word 41201, Word 41265,
+                Word 41328, Word 41390, Word 41454, Word 41518, Word 41581
+
+J0740   DATA    Word 41645, Word 41707, Word 41771, Word 41835, Word 41899,
+                Word 41962, Word 42026, Word 42090, Word 42152, Word 42216
+
+J0750   DATA    Word 42280, Word 42344, Word 42408, Word 42472, Word 42536,
+                Word 42599, Word 42663, Word 42727, Word 42791, Word 42855
+
+J0760   DATA    Word 42919, Word 42983, Word 43047, Word 43111, Word 43175,
+                Word 43239, Word 43303, Word 43367, Word 43430, Word 43494
+
+J0770   DATA    Word 43558, Word 43624, Word 43688, Word 43752, Word 43817,
+                Word 43881, Word 43945, Word 44009, Word 44073, Word 44139
+
+J0780   DATA    Word 44203, Word 44267, Word 44332, Word 44396, Word 44460,
+                Word 44524, Word 44590, Word 44655, Word 44719, Word 44783
+
+J0790   DATA    Word 44847, Word 44913, Word 44977, Word 45042, Word 45106,
+                Word 45170, Word 45236, Word 45301, Word 45365, Word 45429
+
+J0800   DATA    Word 45494, Word 45558, Word 45624, Word 45688, Word 45753,
+                Word 45817, Word 45881, Word 45947, Word 46011, Word 46076
+
+J0810   DATA    Word 46140, Word 46204, Word 46270, Word 46334, Word 46399,
+                Word 46463, Word 46527, Word 46593, Word 46657, Word 46722
+
+J0820   DATA    Word 46786, Word 46850, Word 46914, Word 46980, Word 47044,
+                Word 47109, Word 47173, Word 47237, Word 47301, Word 47367
+
+J0830   DATA    Word 47431, Word 47494, Word 47560, Word 47624, Word 47688,
+                Word 47753, Word 47817, Word 47881, Word 47945, Word 48009
+
+J0840   DATA    Word 48073, Word 48137, Word 48201, Word 48267, Word 48331,
+                Word 48395, Word 48459, Word 48523, Word 48587, Word 48651
+
+J0850   DATA    Word 48715, Word 48779, Word 48843, Word 48907, Word 48971,
+                Word 49033, Word 49097, Word 49161, Word 49225, Word 49289
+
+J0860   DATA    Word 49353, Word 49417, Word 49481, Word 49544, Word 49608,
+                Word 49672, Word 49734, Word 49798, Word 49862, Word 49926
+
+J0870   DATA    Word 49989, Word 50051, Word 50115, Word 50179, Word 50243,
+                Word 50306, Word 50368, Word 50432, Word 50495, Word 50559
+
+J0880   DATA    Word 50621, Word 50685, Word 50747, Word 50810, Word 50874,
+                Word 50936, Word 51000, Word 51063, Word 51125, Word 51188
+
+J0890   DATA    Word 51250, Word 51314, Word 51377, Word 51439, Word 51502,
+                Word 51564, Word 51627, Word 51689, Word 51752, Word 51814
+
+J0900   DATA    Word 51877, Word 51939, Word 52002, Word 52064, Word 52127,
+                Word 52189, Word 52250, Word 52314, Word 52375, Word 52438
+
+J0910   DATA    Word 52500, Word 52561, Word 52624, Word 52686, Word 52747,
+                Word 52810, Word 52871, Word 52934, Word 52996, Word 53057
+
+J0920   DATA    Word 53118, Word 53181, Word 53243, Word 53304, Word 53365,
+                Word 53426, Word 53489, Word 53550, Word 53612, Word 53673
+
+J0930   DATA    Word 53734, Word 53795, Word 53856, Word 53919, Word 53980,
+                Word 54041, Word 54102, Word 54164, Word 54225, Word 54286
+
+J0940   DATA    Word 54347, Word 54408, Word 54469, Word 54530, Word 54591,
+                Word 54652, Word 54713, Word 54773, Word 54834, Word 54895
+
+J0950   DATA    Word 54956, Word 55015, Word 55076, Word 55137, Word 55198,
+                Word 55259, Word 55319, Word 55380, Word 55439, Word 55500
+
+J0960   DATA    Word 55560, Word 55621, Word 55682, Word 55742, Word 55803,
+                Word 55862, Word 55923, Word 55983, Word 56042, Word 56103
+
+J0970   DATA    Word 56164, Word 56224, Word 56283, Word 56344, Word 56404,
+                Word 56463, Word 56524, Word 56584, Word 56643, Word 56703
+
+J0980   DATA    Word 56763, Word 56823, Word 56883, Word 56942, Word 57002,
+                Word 57062, Word 57121, Word 57181, Word 57240, Word 57300
+
+J0990   DATA    Word 57359, Word 57419, Word 57478, Word 57538, Word 57597,
+                Word 57657, Word 57716, Word 57776, Word 57835, Word 57893
+
+J1000   DATA    Word 57953, Word 58013, Word 58072, Word 58131, Word 58190,
+                Word 58249, Word 58309, Word 58368, Word 58427, Word 58486
+
+J1010   DATA    Word 58545, Word 58604, Word 58663, Word 58722, Word 58781,
+                Word 58840, Word 58899, Word 58957, Word 59016, Word 59075
+
+J1020   DATA    Word 59134, Word 59193, Word 59252, Word 59310
